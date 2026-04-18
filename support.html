@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarComfort 支援</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #15202b;
+      --muted: #617080;
+      --accent: #1f7a5c;
+      --border: #dde5ee;
+      --soft: #eef7f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(49, 170, 128, 0.1), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 50px rgba(23, 52, 84, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.1;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .tip {
+      margin-top: 18px;
+      padding: 16px 18px;
+      background: var(--soft);
+      border-radius: 18px;
+      border: 1px solid rgba(31, 122, 92, 0.12);
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <h1>CarComfort 支援</h1>
+      <p class="meta">最後更新日期：2026-04-18</p>
+
+      <p>感謝使用 CarComfort。若你在量測、報表匯出或上架版本使用上遇到問題，可參考以下說明。</p>
+
+      <h2>常見問題</h2>
+
+      <h3>1. 為什麼無法開始量測？</h3>
+      <p>請先確認：</p>
+      <ul>
+        <li>裝置支援 Device Motion</li>
+        <li>已允許 CarComfort 使用動作感測資料</li>
+        <li>已先按下「準備」或完成量測設定</li>
+      </ul>
+
+      <h3>2. 為什麼沒有顯示量測結果？</h3>
+      <p>CarComfort 只有在開始量測並累積有效樣本後，才會顯示舒適性、暈車風險與各項指標。若尚未開始量測，畫面會顯示等待量測提示。</p>
+
+      <h3>3. 為什麼無法匯出 PDF？</h3>
+      <p>請確認：</p>
+      <ul>
+        <li>已完成至少一段有效量測</li>
+        <li>裝置有足夠可用儲存空間</li>
+        <li>iOS 分享面板未被系統限制</li>
+      </ul>
+
+      <h3>4. 量測結果是否可作為正式認證？</h3>
+      <p>CarComfort 主要用於研究、原型驗證、路段比較與趨勢觀察。若需正式法規驗證、合規檢測或高精度工程認證，仍建議使用專業量測設備與完整標準流程。</p>
+
+      <h2>支援範圍</h2>
+      <ul>
+        <li>車內振動量測</li>
+        <li>舒適度與暈車風險趨勢評估</li>
+        <li>PDF 報表匯出</li>
+        <li>繁中、簡中、英文、德文、西班牙文、日文、韓文、阿拉伯文介面</li>
+      </ul>
+
+      <h2>聯絡支援</h2>
+      <p>若你需要技術支援，建議在來信中提供以下資訊：</p>
+      <ul>
+        <li>iPhone 型號</li>
+        <li>iOS 版本</li>
+        <li>App 版本</li>
+        <li>問題發生步驟</li>
+        <li>是否能穩定重現</li>
+        <li>相關截圖</li>
+      </ul>
+
+      <div class="tip">
+        <p><strong>建議聯絡方式</strong></p>
+        <p>Email：support@example.com</p>
+        <p>Website：https://example.com/carcomfort-support</p>
+      </div>
+
+      <h2>App Store Connect 建議填法</h2>
+      <ul>
+        <li>Support URL：放這份支援頁的公開網址</li>
+        <li>Privacy Policy URL：放隱私權政策頁的公開網址</li>
+      </ul>
+
+      <p class="footer">CarComfort Support</p>
+    </article>
+  </main>
+</body>
+</html>
