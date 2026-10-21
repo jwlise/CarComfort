@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CarComfort 隱私權政策</title>
+  <link rel="alternate" hreflang="zh-Hant" href="privacy-policy.html">
+  <link rel="alternate" hreflang="en" href="privacy-policy-en.html">
   <style>
     :root {
       color-scheme: light;
@@ -74,11 +76,21 @@
       color: var(--muted);
       font-size: 0.95rem;
     }
+    a { color: var(--accent); text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .language-switch { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    .language-switch a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 10px; }
+    .language-switch [aria-current="page"] { font-weight: 700; background: var(--bg); }
+    @media (max-width: 480px) { .wrap { padding: 20px 12px 40px; } .card { padding: 24px 18px; } }
   </style>
 </head>
 <body>
   <main class="wrap">
     <article class="card">
+      <nav class="language-switch" aria-label="語言">
+        <a href="privacy-policy.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a>
+        <a href="privacy-policy-en.html" lang="en" hreflang="en">English</a>
+      </nav>
       <h1>CarComfort 隱私權政策</h1>
       <p class="meta">最後更新日期：2026-04-18</p>
 
@@ -130,9 +142,9 @@
       </ul>
 
       <h2>9. 聯絡方式</h2>
-      <p>若你對本隱私權政策有疑問，請透過支援頁面或開發者提供的聯絡方式與我們聯繫。</p>
+      <p>若你對本隱私權政策有疑問，請透過<a href="support.html">支援頁面</a>或開發者提供的聯絡方式與我們聯繫。</p>
 
-      <p class="footer">CarComfort Privacy Policy</p>
+      <p class="footer">CarComfort Privacy Policy · <a href="support.html">支援頁面</a></p>
     </article>
   </main>
 </body>
