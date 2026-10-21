@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarComfort Support</title>
+  <link rel="alternate" hreflang="zh-Hant" href="support.html">
+  <link rel="alternate" hreflang="en" href="support-en.html">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #15202b;
+      --muted: #617080;
+      --accent: #1f7a5c;
+      --border: #dde5ee;
+      --soft: #eef7f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(49, 170, 128, 0.1), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 50px rgba(23, 52, 84, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.1;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .tip {
+      margin-top: 18px;
+      padding: 16px 18px;
+      background: var(--soft);
+      border-radius: 18px;
+      border: 1px solid rgba(31, 122, 92, 0.12);
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a { color: var(--accent); text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .language-switch { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    .language-switch a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 10px; }
+    .language-switch [aria-current="page"] { font-weight: 700; background: var(--bg); }
+    @media (max-width: 480px) { .wrap { padding: 20px 12px 40px; } .card { padding: 24px 18px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <nav class="language-switch" aria-label="Language">
+        <a href="support.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+        <a href="support-en.html" lang="en" hreflang="en" aria-current="page">English</a>
+      </nav>
+      <h1>CarComfort Support</h1>
+      <p class="meta">Last updated: 2026-04-18</p>
+
+      <p>Thank you for using CarComfort. If you encounter problems with measurements, report exports, or the released version of the app, please refer to the guidance below.</p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>1. Why can’t I start a measurement?</h3>
+      <p>Please first check that:</p>
+      <ul>
+        <li>Your device supports Device Motion</li>
+        <li>You have allowed CarComfort to access motion sensor data</li>
+        <li>You have tapped “Prepare” or completed the measurement settings</li>
+      </ul>
+
+      <h3>2. Why are no measurement results displayed?</h3>
+      <p>CarComfort displays comfort, motion sickness risk, and other metrics only after a measurement has started and valid samples have been collected. Before a measurement starts, the screen displays a waiting-for-measurement message.</p>
+
+      <h3>3. Why can’t I export a PDF?</h3>
+      <p>Please check that:</p>
+      <ul>
+        <li>You have completed at least one valid measurement</li>
+        <li>Your device has enough available storage</li>
+        <li>The iOS share sheet is not restricted by the system</li>
+      </ul>
+
+      <h3>4. Can measurement results be used for formal certification?</h3>
+      <p>CarComfort is primarily intended for research, prototype validation, road segment comparisons, and observing trends. For formal regulatory validation, compliance testing, or high-precision engineering certification, professional measurement equipment and complete standardized procedures are still recommended.</p>
+
+      <h2>Supported Features</h2>
+      <ul>
+        <li>In-vehicle vibration measurement</li>
+        <li>Assessment of comfort and motion sickness risk trends</li>
+        <li>PDF report export</li>
+        <li>Interfaces in Traditional Chinese, Simplified Chinese, English, German, Spanish, Japanese, Korean, and Arabic</li>
+      </ul>
+
+      <h2>Contact Support</h2>
+      <p>If you need technical support, we recommend including the following information in your email:</p>
+      <ul>
+        <li>iPhone model</li>
+        <li>iOS version</li>
+        <li>App version</li>
+        <li>Steps leading to the problem</li>
+        <li>Whether the problem can be reproduced consistently</li>
+        <li>Relevant screenshots</li>
+      </ul>
+
+      <div class="tip">
+        <p><strong>Recommended Contact Method</strong></p>
+        <p>Email:<a href="mailto:jwlise@gmail.com">jwlise@gmail.com</a></p>
+      </div>
+      <p class="footer">CarComfort Support · <a href="privacy-policy-en.html">Privacy Policy</a></p>
+    </article>
+  </main>
+</body>
+</html>
